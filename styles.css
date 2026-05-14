@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Sleek dark theme background */
+    color: #f8fafc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Beautiful Premium Header */
+.app-header {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.app-header h2 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin: 0;
+    font-size: 1.8rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Glassmorphism containers and cards */
+.premium-card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.premium-card:hover {
+    box-shadow: 0 15px 35px rgba(99, 102, 241, 0.15);
+}
+
+/* Buttons with rich colors and micro-animations */
+.btn-gradient-primary {
+    background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.btn-gradient-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(99, 102, 241, 0.5);
+    color: #fff;
+}
+
+.btn-gradient-success {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.btn-gradient-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.5);
+    color: #fff;
+}
+
+.btn-custom-edit {
+    background-color: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+    border: 1px solid #f59e0b;
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 6px 14px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.btn-custom-edit:hover {
+    background-color: #f59e0b;
+    color: #0f172a;
+    transform: scale(1.05);
+}
+
+.btn-custom-delete {
+    background-color: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 1px solid #ef4444;
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 6px 14px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.btn-custom-delete:hover {
+    background-color: #ef4444;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Premium Table Styling */
+.table-custom {
+    color: #e2e8f0;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.table-custom thead {
+    background-color: rgba(15, 23, 42, 0.8);
+}
+
+.table-custom th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    color: #94a3b8;
+}
+
+.table-custom td {
+    padding: 16px 20px;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    background-color: rgba(30, 41, 59, 0.3);
+    transition: background-color 0.2s;
+}
+
+.table-custom tbody tr:hover td {
+    background-color: rgba(45, 55, 72, 0.5);
+}
+
+.table-custom tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Category Badges */
+.badge-category {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: rgba(99, 102, 241, 0.15);
+    color: #818cf8;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    display: inline-block;
+}
+
+/* Inputs and Forms */
+.form-control-custom {
+    background-color: rgba(15, 23, 42, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #f8fafc !important;
+    border-radius: 8px;
+    padding: 12px 16px;
+    transition: all 0.2s;
+}
+
+.form-control-custom:focus {
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25) !important;
+    border-color: #6366f1 !important;
+    outline: none;
+}
+
+.form-control-custom::placeholder {
+    color: #64748b !important;
+}
+
+.form-label-custom {
+    font-weight: 500;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    display: block;
+}
+
+.price-tag {
+    font-weight: 700;
+    color: #10b981;
+    font-size: 1.05rem;
+}
+
+/* Footer */
+.app-footer {
+    margin-top: auto;
+    padding: 24px 0;
+    text-align: center;
+    color: #64748b;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
